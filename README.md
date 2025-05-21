@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Timeline Planner App
+
+A lightweight, modern web application built with Next.js, designed to help individuals or teams visually plan and manage timelines for work or development projects. The core goal is simplicity—offering a clean, intuitive interface that makes it easy to break down a project into milestones, assign timeframes, and track progress at a glance.
+
+## Key Features
+
+- **Clean, Minimal UI**: A modern design aesthetic with minimal distractions, optimized for focus and usability
+- **Timeline Visualization**: Create and edit timelines using draggable blocks, calendar-style views, or Gantt chart-like visualizations
+- **Project & Milestone Management**: Define projects, add milestones/tasks with due dates, durations, and optional tags or color-coding
+- **Quick Edits**: Inline editing of task names, durations, and start/end dates without modal popups
+- **Autosave / Persistence**: Data stored using localStorage (for MVP) with optional cloud sync
+- **Fast Deployment**: Optimized for deployment on Vercel
 
 ## Getting Started
 
