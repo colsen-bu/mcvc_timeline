@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTimeline } from '../../context/TimelineContext';
 import { PageLayout } from '../../components/layout/PageLayout';
-import { Card, Button, Input } from '../../components/ui/Elements';
+import { Card, Button } from '../../components/ui/Elements';
 import { TimelineViewType } from '../../models/types';
 import { clearAllData } from '../../utils/localStorage';
 

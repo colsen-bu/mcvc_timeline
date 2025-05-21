@@ -9,7 +9,7 @@ import {
   useMemo
 } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { Project, Milestone, Task, Tag, TimelineSettings, TimelineViewType } from '../models/types';
+import { Project, Milestone, Task, Tag, TimelineSettings } from '../models/types';
 import { loadProjects, saveProjects, loadSettings, saveSettings } from '../utils/localStorage';
 
 // Default timeline settings
@@ -464,7 +464,7 @@ export const TimelineProvider = ({ children }: { children: ReactNode }) => {
     getProjectById,
     getMilestoneById,
     isLoading
-  }), [projects, tags, settings, isLoading]);
+  }), [projects, tags, settings, isLoading, getMilestoneById, getProjectById]);
 
   return (
     <TimelineContext.Provider value={contextValue}>

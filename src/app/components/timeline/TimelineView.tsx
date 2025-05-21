@@ -2,9 +2,9 @@
 
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { useTimeline } from '../../context/TimelineContext';
-import { format, addDays, differenceInDays, isBefore, isAfter, parseISO, startOfDay, subDays, addWeeks, addMonths, startOfWeek, startOfMonth, endOfMonth, getWeek, endOfWeek, startOfQuarter, addQuarters, isSameDay, isWithinInterval, endOfQuarter, isSameWeek } from 'date-fns';
-import { Card, EmptyState, Badge, Button } from '../ui/Elements';
-import { Project, Milestone, TimelineViewType, TimeScaleType } from '../../models/types';
+import { format, addDays, differenceInDays, isBefore, isAfter, parseISO, startOfDay, subDays, addWeeks, addMonths, startOfWeek, startOfMonth, endOfMonth, getWeek, endOfWeek, startOfQuarter, addQuarters, isSameDay, isSameWeek } from 'date-fns';
+import { Card, EmptyState, Button } from '../ui/Elements';
+import { Project, TimelineViewType, TimeScaleType } from '../../models/types';
 import { MilestoneForm } from './ProjectForms';
 import html2canvas from 'html2canvas-pro';
 import { createExportableClone } from './ExportUtils';
@@ -173,7 +173,7 @@ export const TimelineView = ({ viewType = 'gantt' }: TimelineViewProps) => {
     ));
 
     const observer = new ResizeObserver(entries => {
-      for (let entry of entries) {
+      for (const entry of entries) {
         const currentContainerWidth = entry.contentRect.width;
         if (currentContainerWidth > 0 && scale.length > 0) {
           const optimalUnitW = calculateOptimalUnitWidth(

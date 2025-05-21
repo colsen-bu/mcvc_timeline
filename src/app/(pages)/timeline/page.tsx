@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import { useTimeline } from '../../context/TimelineContext';
 import { PageLayout } from '../../components/layout/PageLayout';
-import { Card, Button, EmptyState, Badge } from '../../components/ui/Elements';
+import { Card, Badge } from '../../components/ui/Elements';
 import { TimelineView } from '../../components/timeline/TimelineView';
 import { ProjectForm, MilestoneForm } from '../../components/timeline/ProjectForms';
-import { Project, Milestone, TimelineViewType, TimelineSettings } from '../../models/types';
+import { Project, TimelineViewType, TimelineSettings } from '../../models/types';
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 
 export default function TimelinePage() {
